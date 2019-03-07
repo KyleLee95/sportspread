@@ -1,8 +1,12 @@
-import React from 'react'
-import { Button } from 'react-native'
+import React from "react";
+import { Button } from "react-native";
+import axios from "axios";
+import { sortGames } from "./algorithm";
 
 export const GetGameButton = () => {
-  return <Button title="Show Me The Games" />
-}
+  //on press fire algorithm
+  //on press fire axios request
+  return <Button title="Show Me The Games" onPress={sortGames} />;
+};
 
-export default GetGameButton
+export default GetGameButton;
